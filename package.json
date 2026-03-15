@@ -1,29 +1,38 @@
 {
   "name": "genspark.ai-openclaw",
   "version": "1.5.14",
-  "description": "Genspark.ai Openclaw SDK - Integration utilities",
+  "description": "Genspark.ai Openclaw SDK - Integration utilities with Railway HTTP server",
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "files": [
     "src",
     "scripts/setup.js",
     "scripts/postinstall.js",
-    "scripts/build.js"
+    "scripts/build.js",
+    "server.js"
   ],
   "bin": {
     "genspark.ai-openclaw": "./scripts/setup.js"
   },
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node server.js",
     "build": "node scripts/build.js",
     "lint": "eslint src/**/*.js",
-    "test": "jest"
+    "test": "jest",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
   },
   "license": "MIT",
   "keywords": [
     "utility",
     "sdk",
-    "integration"
+    "integration",
+    "genspark",
+    "openclaw",
+    "railway"
   ],
   "dependencies": {}
 }
