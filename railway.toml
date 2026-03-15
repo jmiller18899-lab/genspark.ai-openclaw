@@ -1,0 +1,16 @@
+[build]
+builder = "nixpacks"
+buildCommand = "npm install && node scripts/build.js"
+
+[deploy]
+startCommand = "node server.js"
+healthcheckPath = "/health"
+healthcheckTimeout = 30
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
+
+[environments.production.deploy]
+startCommand = "node server.js"
+
+[environments.staging.deploy]
+startCommand = "node server.js"
